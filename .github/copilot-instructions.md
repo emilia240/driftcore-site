@@ -43,9 +43,23 @@
 ### Git & commits
 - Follow **Conventional Commits**:
   - Format: `type: description`
-  - Types: `feat`, `fix`, `style`, `refactor`, `chore`, `docs`, `ci`
+  - Types: `feat`, `fix`, `style`, `refactor`, `chore`, `docs` etc.
   - First word capitalized, imperative mood, max 50 characters summary.
 - Branch per feature (e.g., `feat/homepage`), merge with a conventional commit message.
+
+### Responsive Design
+- Always use Tailwind's responsive prefixes (`sm:`, `md:`, `lg:`, `xl:`) to adapt layouts.
+- Prefer **flex** and **grid** for layouts: `flex`, `flex-col`, `flex-wrap`, `grid`, `grid-cols-*`, `gap-*`.
+- Use `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8` as the standard page width container.
+- Ensure all text, buttons, and interactive elements remain large enough and readable on all screen sizes (minimum touch target 44x44px).
+
+### Accessibility
+- Every image gets an `alt` attribute.
+- Interactive elements (buttons, links, form inputs) must have visible `:focus` outlines (`focus:ring-2`, `focus:ring-cyan`, etc.).
+- Use semantic HTML: `<header>`, `<nav>`, `<main>`, `<footer>`, `<section>`, `<article>`, `<button>`.
+- Add `aria-label` for accessibility when necessary (e.g., icon buttons without text).
+- Forms: every `<input>` pairs with a `<label>` (or `aria-label`), and provides clear error/success messages.
+- Maintain color contrast: navy (#213345) on cream (#F9F9F9) is fine; avoid pairing blue-muted (#4A5D87) on navy without checking.
 
 ### AI behaviour
 - When generating code, always apply the above rules.
