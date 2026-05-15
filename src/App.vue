@@ -1,20 +1,18 @@
-<script setup>
-
-</script>
-
 <template>
-  <div id="app">
-    <!-- Test element -->
-    <div class="bg-navy text-cream m-2 p-8 rounded-xl">
-      <h1 class="font-heading text-h1 mb-4">
-        DriftCore
-      </h1>
-      <p class="font-body text-body">
-        Testing custom theme tokens!
-      </p>
-    </div>
+  <div id="app" class="flex flex-col min-h-screen">
+    <NavBar />
 
+     <main class="flex-grow">
+      <router-view />
+    </main>
 
     <router-view />
   </div>
 </template>
+
+
+<script setup>
+
+import NavBar from './components/common/NavBar.vue'
+
+</script>
