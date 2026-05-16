@@ -19,6 +19,7 @@ export default {
       },
       fontSize: {
         'body': 'clamp(1rem, 0.95rem + 0.25vw, 1.125rem)',
+        'body-footer': 'clamp(0.875rem, 0.8rem + 0.15vw, 1rem)',
         'h5': 'clamp(1.125rem, 1.05rem + 0.375vw, 1.375rem)',
         'h4': 'clamp(1.25rem, 1.15rem + 0.5vw, 1.625rem)',
         'h3': 'clamp(1.5rem, 1.35rem + 0.75vw, 2rem)',
