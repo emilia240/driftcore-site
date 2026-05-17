@@ -45,7 +45,6 @@
   - Format: `type: description`
   - Types: `feat`, `fix`, `style`, `refactor`, `chore`, `docs` etc.
   - First word capitalized, imperative mood, max 50 characters summary.
-- Branch per feature (e.g., `feat/homepage`), merge with a conventional commit message.
 
 ### Responsive Design
 - Always use Tailwind's responsive prefixes (`sm:`, `md:`, `lg:`, `xl:`) to adapt layouts.
