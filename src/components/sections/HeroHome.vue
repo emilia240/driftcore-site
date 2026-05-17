@@ -242,7 +242,6 @@ import Logo from '/logo-navigation.svg'
     background: rgba(133, 201, 201, 0.14); /* teal-ish */
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .card-drift,
   .ambient-orb-one,

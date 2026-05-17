@@ -49,7 +49,7 @@
 ### Responsive Design
 - Always use Tailwind's responsive prefixes (`sm:`, `md:`, `lg:`, `xl:`) to adapt layouts.
 - Prefer **flex** and **grid** for layouts: `flex`, `flex-col`, `flex-wrap`, `grid`, `grid-cols-*`, `gap-*`.
-- Use `max-w-8xl mx-auto px-4 sm:px-6 lg:px-8` as the standard page width container.
+- Use `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8` as the standard page width container.
 - Ensure all text, buttons, and interactive elements remain large enough and readable on all screen sizes (minimum touch target 44x44px).
 
 ### Accessibility
