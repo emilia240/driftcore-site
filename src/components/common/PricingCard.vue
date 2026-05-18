@@ -58,7 +58,7 @@
 defineProps({
   planName:    { type: String,  required: true },
   price:       { type: String,  required: true },
-  priceNote:   { type: String,  default: 'per month' },
+  priceNote:   { type: String,  default: '/ user / month' },
   features:    { type: Array,   required: true },
   ctaLabel:    { type: String,  default: 'Start free trial' },
   highlighted: { type: Boolean, default: false },

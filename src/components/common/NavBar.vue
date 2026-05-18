@@ -15,7 +15,7 @@
             <div class="flex-shrink-0">
             <router-link to="/" class="flex items-center">
                 <img 
-                src="/logo-navigation.svg" 
+                src="/logo-driftcore.svg" 
                 alt="DriftCore Logo" 
                 class="h-14 w-auto"
                 />
@@ -157,7 +157,7 @@
                  <!-- Logo - centered in its own div -->
                 <div class="flex justify-center mt-auto mb-6">
                     <img 
-                    src="/logo-navigation.svg" 
+                    src="/logo-driftcore.svg" 
                     alt="DriftCore Logo" 
                     class="h-14 w-auto"
                     />

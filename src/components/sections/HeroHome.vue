@@ -111,7 +111,7 @@
 import HeroHours from '../../assets/graphics/hero-hours.svg'
 import HeroApprovals from '../../assets/graphics/hero-approvals.svg'
 import HeroProject from '../../assets/graphics/hero-project.svg'
-import Logo from '/logo-navigation.svg'
+import Logo from '/logo-driftcore.svg'
 </script>
 
 <style scoped>
