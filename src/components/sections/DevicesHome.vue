@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-blue-light text-navy">
-    <div class="mx-auto max-w-7xl px-6 py-14 lg:py-20">
+  <section class=" text-navy">
+    <div class="mx-auto max-w-7xl px-6 py-14 lg:py-24">
 
       <!-- Heading block -->
       <div class="mx-auto max-w-4xl text-center">

@@ -1,6 +1,6 @@
 <template>
   <!-- Section wrapper: cream background with navy text -->
-  <section class="bg-cream text-navy">
+  <section class=" text-navy">
     <!-- Main container: keeps the section centered and gives it hero-like height on desktop -->
     <div class="mx-auto max-w-7xl px-6 py-14 lg:min-h-[calc(100vh-10rem)] lg:py-16">
       <!-- Heading block: centered title + subtitle -->

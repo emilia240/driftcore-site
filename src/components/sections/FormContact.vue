@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-cream">
+  <section>
 
     <!-- Success toast -->
     <Transition name="toast">

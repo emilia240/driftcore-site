@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-cream">
+  <section>
     <div class="mx-auto max-w-7xl px-6 py-8 lg:py-10">
       <div
         class="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-16 h-[70vh]"

@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-cream">
-    <div class="mx-auto max-w-7xl px-6 py-14 lg:py-20">
+  <section>
+    <div class="mx-auto max-w-7xl px-6 py-14 lg:py-24">
       <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
 
         <!-- Left: icon + CTA -->

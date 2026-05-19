@@ -1,9 +1,5 @@
 <template>
-  <section class="relative isolate overflow-hidden bg-cream text-navy">
-    <!-- Background and orbs stay the same -->
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-light/30 via-cream to-blue-soft/20"></div>
-    <div class="ambient-orb ambient-orb-one"></div>
-    <div class="ambient-orb ambient-orb-two"></div>
+  <section class="relative isolate overflow-hidden text-navy">
 
     <div class="relative z-10 lg:min-h-[calc(100vh-8rem)] mx-auto grid max-w-8xl items-center gap-2 px-6 py-10 md:gap-4 lg:grid-cols-2 lg:gap-6 lg:py-16">
         
@@ -115,30 +111,7 @@ import Logo from '/logo-driftcore.svg'
 </script>
 
 <style scoped>
-/* ONLY animations - everything else uses Tailwind */
-
-.ambient-orb {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(100px);
-  pointer-events: none;
-}
-
-.ambient-orb-one {
-  top: -6rem;
-  left: -4rem;
-  width: 22rem;
-  height: 22rem;
-  background: rgba(133, 147, 201, 0.18);
-}
-
-.ambient-orb-two {
-  top: 12%;
-  right: 8%;
-  width: 20rem;
-  height: 20rem;
-  background: rgba(84, 201, 235, 0.12);
-}
+/* ONLY animations*/
 
 /* Animated cyan border glow */
 .card-drift {
@@ -212,36 +185,6 @@ import Logo from '/logo-driftcore.svg'
   50% { transform: rotate(-1deg) translateY(-8px); }
 }
 
-@keyframes orb-drift {
-  0%, 100% { transform: translate3d(0, 0, 0); }
-  50% { transform: translate3d(24px, 18px, 0); }
-}
-
-@keyframes orb-drift-alt {
-  0%, 100% { transform: translate3d(0, 0, 0); }
-  50% { transform: translate3d(-20px, 22px, 0); }
-}
-
-@keyframes orb-color-pulse-1 {
-  0%, 100% {
-    background: rgba(133, 147, 201, 0.18); /* blue-light */
-  }
-  33% {
-    background: rgba(84, 201, 235, 0.15); /* cyan/blue-soft */
-  }
-  66% {
-    background: rgba(147, 133, 201, 0.16); /* subtle purple */
-  }
-}
-
-@keyframes orb-color-pulse-2 {
-  0%, 100% {
-    background: rgba(84, 201, 235, 0.12); /* cyan */
-  }
-  50% {
-    background: rgba(133, 201, 201, 0.14); /* teal-ish */
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   .card-drift,
   .ambient-orb-one,
