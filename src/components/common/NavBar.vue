@@ -1,11 +1,10 @@
 <template>
   <Disclosure 
     as="nav" 
-    v-slot="{ open }" 
     :class="[
       'sticky top-0 z-50 transition-all duration-300',
       scrolled 
-        ? 'bg-cream/95 backdrop-blur-sm shadow-md' 
+        ? 'bg-cream/95 shadow-md' 
         : 'bg-cream shadow-sm'
     ]"
   >
@@ -51,12 +50,13 @@
             <!-- Mobile menu button (hamburger) -->
             <div class="lg:hidden">
             <DisclosureButton
+                @click="toggleMenu"
                 class="inline-flex items-center justify-center p-2 rounded-md text-navy focus:outline-none focus:ring-2 focus:ring-inset focus:ring-navy transition-colors"
-                :aria-label="open ? 'Close menu' : 'Open menu'"
+                :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'"
             >
                 <!-- Hamburger icon -->
                 <svg
-                v-if="!open"
+                v-if="!isMenuOpen"
                 class="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -82,99 +82,104 @@
             </div>
         </div>
         </div>
+  </Disclosure>
 
-        <!-- Overlay when mobile menu is open -->
-       <Transition
+  <!-- OUTSIDE Disclosure, after the closing </Disclosure> tag -->
+    <Teleport to="body">
+    <!-- Overlay -->
+    <Transition
         enter-active-class="transition-opacity duration-300"
         enter-from-class="opacity-0"
         enter-to-class="opacity-100"
         leave-active-class="transition-opacity duration-300"
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
-        >
-            <DisclosureButton
-                v-if="open"
-                as="div"
-                class="fixed inset-0 bg-blue-light/60 backdrop-blur-sm z-40 lg:hidden cursor-pointer"
-            />
-        </Transition>
+    >
+        <div
+        v-if="isMenuOpen"
+        @click="closeMenu"
+        class="fixed inset-0 bg-blue-light/60 backdrop-blur-sm z-40 lg:hidden cursor-pointer"
+        />
+    </Transition>
 
-        <!-- Mobile menu panel (slides from right) -->
-        <Transition
+    <!-- Panel -->
+    <Transition
         enter-active-class="transition-transform duration-300 ease-out"
         enter-from-class="translate-x-full"
         enter-to-class="translate-x-0"
         leave-active-class="transition-transform duration-300 ease-in"
         leave-from-class="translate-x-0"
         leave-to-class="translate-x-full"
+    >
+        <div
+        v-if="isMenuOpen"
+        class="fixed top-0 right-0 h-full w-3/4 md:w-1/3 max-w-sm bg-cream shadow-2xl z-50 lg:hidden"
         >
-        <DisclosurePanel 
-            v-if="open"
-            class="fixed top-0 right-0 h-full w-3/4 md:w-1/3 max-w-sm bg-cream shadow-2xl z-50 lg:hidden"
-        >
-            <div class="flex flex-col h-full">
-                <!-- Close button - separate, top right -->
-                <div class="flex justify-end p-1">
-                    <DisclosureButton
-                    class="p-2 rounded-md text-navy hover:bg-blue-light transition-colors"
-                    >
-                    <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    </DisclosureButton>
-                </div>
-
-
-                <!-- Menu items - FLEX WITH CENTER ALIGNMENT -->
-                <div class="px-6 pt-6 pb-3 flex flex-col items-center space-y-2">
-                    <DisclosureButton
-                    v-for="link in navigation"
-                    :key="link.name"
-                    as="router-link"
-                    :to="link.href"
-                    class="px-4 py-3 rounded-md text-base font-body text-navy hover:bg-blue-light transition-colors text-center"
-                    >
-                    {{ link.name }}
-                    </DisclosureButton>
-
-
-                    <!-- Login button centered -->
-                    <DisclosureButton
-                    as="router-link"
-                    to="/login"
-                    class="w-full px-6 py-3 rounded-xl text-center text-base font-body text-cream bg-blue-muted"
-                    >
-                    Log in
-                    </DisclosureButton>
-                </div>
-                
-                 <!-- Logo - centered in its own div -->
-                <div class="flex justify-center mt-auto mb-6">
-                    <img 
-                    src="/logo-driftcore.svg" 
-                    alt="DriftCore Logo" 
-                    class="h-14 w-auto"
-                    />
-                </div>
-
+        <div class="flex flex-col h-full">
+            <!-- Close button -->
+            <div class="flex justify-end p-1">
+            <button
+                @click="closeMenu"
+                class="p-2 rounded-md text-navy hover:bg-blue-light transition-colors"
+                aria-label="Close menu"
+            >
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
             </div>
-        </DisclosurePanel>
-        </Transition>
 
-  </Disclosure>
+            <!-- Nav links -->
+            <div class="px-6 pt-6 pb-3 flex flex-col items-center space-y-2">
+            <router-link
+                v-for="link in navigation"
+                :key="link.name"
+                :to="link.href"
+                @click="closeMenu"
+                class="w-full px-4 py-3 rounded-md text-base font-body text-navy hover:bg-blue-light transition-colors text-center"
+            >
+                {{ link.name }}
+            </router-link>
+
+            <router-link
+                to="/login"
+                @click="closeMenu"
+                class="w-full px-6 py-3 rounded-xl text-center text-base font-body text-cream bg-blue-muted"
+            >
+                Log in
+            </router-link>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex justify-center mt-auto mb-6">
+            <img src="/logo-driftcore.svg" alt="DriftCore Logo" class="h-14 w-auto" />
+            </div>
+        </div>
+        </div>
+    </Transition>
+    </Teleport>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+
+const isMenuOpen = ref(false)
+
+function toggleMenu() { isMenuOpen.value = !isMenuOpen.value }
+function closeMenu()  { isMenuOpen.value = false }
+
+watch(isMenuOpen, (val) => {
+  document.body.classList.toggle('overflow-hidden', val)
+})
+
+// safety cleanup if component unmounts while menu is open
+onUnmounted(() => {
+  document.body.classList.remove('overflow-hidden')
+})
 
 const navigation = [
+  { name: 'Home',     href: '/' },
   { name: 'Features', href: '/features' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'About', href: '/about' },
