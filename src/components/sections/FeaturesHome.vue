@@ -39,7 +39,7 @@
             :initial="{ opacity: 0, x: -24 }"
             :visible-once="{ opacity: 1, x: 0, transition: { delay: index * 100, duration: 600 } }"
             type="button"
-            class="feature-tab relative flex w-full items-start overflow-hidden rounded-xl border border-transparent bg-whiteBase px-10 py-6 text-left transition-all duration-300"
+            class="feature-tab relative flex w-full items-start overflow-hidden rounded-xl border border-transparent bg-whiteBase px-10 py-6 text-left transition duration-300"
             :class="selectedTool === index
                 ? 'border-brightBlue shadow-[0_0_0_1px_rgba(84,201,235,0.45),0_0_18px_rgba(84,201,235,0.22)]'
                 : 'text-navy hover:bg-paleBlue hover:shadow-[0_0_0_1px_rgba(133,147,201,0.25)]'"

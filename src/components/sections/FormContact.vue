@@ -67,7 +67,7 @@
             <!-- Submit -->
             <button
               type="submit"
-              class="mt-2 rounded-xl bg-navy px-8 py-4 font-body text-base text-whiteBase shadow-md transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
+              class="mt-2 rounded-xl bg-navy px-8 py-4 font-body font-semibold text-base text-whiteBase shadow-md transition duration-300 hover:scale-105 hover:bg-slateBlue"
             >
               Send message
             </button>

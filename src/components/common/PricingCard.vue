@@ -43,7 +43,7 @@
     <div class="mt-auto pt-10 w-full">
       <router-link
         :to="ctaLabel === 'Contact us' ? '/contact' : '/signup'"
-        class="block w-full rounded-xl px-10 py-4 text-center font-body text-base shadow-2xl transition-all duration-300 hover:scale-105"
+        class="block w-full rounded-xl px-10 py-4 text-center font-body font-semibold text-base shadow-2xl transition duration-300 hover:scale-105"
         :class="highlighted
           ? 'bg-whiteBase text-navy hover:bg-brightBlue hover:text-navy'
           : 'bg-navy text-whiteBase hover:bg-brightBlue hover:text-navy'"

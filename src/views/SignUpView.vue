@@ -306,8 +306,8 @@
               <!-- Submit -->
               <button
                 type="submit"
-                class="mt-2 w-full rounded-xl bg-navy px-10 py-4 font-body text-base text-whiteBase
-                       shadow-md transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
+                class="mt-2 w-full rounded-xl bg-navy px-10 py-4 font-body font-semibold text-base text-whiteBase
+                       shadow-md transition duration-300 hover:scale-105 hover:bg-slateBlue"
               >
                 Start my free trial
               </button>

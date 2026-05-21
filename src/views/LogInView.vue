@@ -95,8 +95,8 @@
 
             <button
               type="submit"
-              class="mt-2 w-full rounded-xl bg-navy px-10 py-4 font-body text-base text-whiteBase
-                     shadow-md transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
+              class="mt-2 w-full rounded-xl bg-navy px-10 py-4 font-body font-semibold text-base text-whiteBase
+                     shadow-md transition duration-300 hover:scale-105 hover:bg-slateBlue"
             >
               Log in
             </button>
@@ -156,8 +156,8 @@
                   >Cancel</button>
                   <button
                     type="button" @click="handleReset"
-                    class="flex-1 rounded-xl bg-navy px-4 py-3 font-body text-sm text-whiteBase
-                           transition-all hover:bg-slateBlue"
+                    class="flex-1 rounded-xl bg-navy px-4 py-3 font-body font-semibold text-sm text-whiteBase
+                           transition duration-300 hover:bg-slateBlue"
                   >Send reset link</button>
                 </div>
               </template>
@@ -177,8 +177,8 @@
                   </div>
                   <button
                     type="button" @click="closeForgot"
-                    class="mt-2 w-full rounded-xl bg-navy px-6 py-3 font-body text-sm text-whiteBase
-                           transition-all hover:bg-slateBlue"
+                    class="mt-2 w-full rounded-xl bg-navy px-6 py-3 font-body font-semibold text-sm text-whiteBase
+                           transition duration-300 hover:bg-slateBlue"
                   >Done</button>
                 </div>
               </template>

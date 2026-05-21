@@ -1,7 +1,7 @@
 <template>
   <section class="relative isolate overflow-hidden text-navy">
 
-    <div class="relative z-10 lg:min-h-[calc(100vh-8rem)] mx-auto grid max-w-8xl items-center gap-2 px-6 py-10 md:gap-4 lg:grid-cols-2 lg:gap-6 lg:py-16">
+    <div class="relative z-10 lg:min-h-[calc(100vh-8rem)] mx-auto grid max-w-7xl items-center gap-2 px-6 py-10 md:gap-4 lg:grid-cols-2 lg:gap-6 lg:py-16">
         
         <!-- LEFT COLUMN: Text content - delayed until after logo -->
         <div class="flex flex-col gap-4 px-4 lg:pl-6 text-center lg:text-left">
@@ -40,7 +40,7 @@
           >
             <router-link
                 to="/signup"
-                class="inline-block rounded-xl bg-navy px-10 py-4 font-body text-base text-whiteBase shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
+                class="inline-block rounded-xl bg-navy px-10 py-4 font-body font-semibold text-base text-whiteBase shadow-2xl transition duration-300 hover:scale-105 hover:bg-brightBlue hover:text-navy"
             >
                 Get started
             </router-link>

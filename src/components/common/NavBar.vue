@@ -8,7 +8,7 @@
         : 'bg-whiteBase shadow-sm'
     ]"
   >
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
             <!-- Logo (left) -->
             <div class="flex-shrink-0">
@@ -41,7 +41,7 @@
             <div class="hidden lg:block">
             <router-link
                 to="/login"
-                class="font-body text-navy px-6 py-2 text-base border-slateBlue border-2 rounded-xl hover:bg-slateBlue hover:text-whiteBase transition-all duration-300"
+                class="font-body font-semibold text-navy px-6 py-2 text-base border-slateBlue border-2 rounded-xl hover:bg-navy hover:text-whiteBase hover:border-navy transition duration-300"
             >
                 Log in
             </router-link>
@@ -144,7 +144,7 @@
             <router-link
                 to="/login"
                 @click="closeMenu"
-                class="w-full px-6 py-3 rounded-xl text-center text-base font-body text-whiteBase bg-slateBlue"
+                class="w-full px-6 py-3 rounded-xl text-center text-base font-body font-semibold text-whiteBase bg-slateBlue"
             >
                 Log in
             </router-link>

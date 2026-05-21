@@ -36,7 +36,7 @@
         <div class="pt-4">
           <router-link
             to="/signup"
-            class="flex bg-brightBlue text-navy font-body font-semibold px-8 py-4 rounded-xl hover:bg-whiteBase hover:text-navy transition-all duration-200"
+            class="flex bg-brightBlue text-navy font-body font-semibold px-8 py-4 rounded-xl shadow-md transition duration-300 hover:scale-105 hover:bg-whiteBase hover:text-navy"
           >
             Get started for free
           </router-link>
