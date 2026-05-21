@@ -1,5 +1,5 @@
 <template>
-  <!-- Section wrapper: cream background with navy text -->
+  <!-- Section wrapper: base background with navy text -->
   <section class=" text-navy">
     <!-- Main container: keeps the section centered and gives it hero-like height on desktop -->
     <div class="mx-auto max-w-7xl px-6 py-14 lg:min-h-[calc(100vh-10rem)] lg:py-16">
@@ -39,10 +39,10 @@
             :initial="{ opacity: 0, x: -24 }"
             :visible-once="{ opacity: 1, x: 0, transition: { delay: index * 100, duration: 600 } }"
             type="button"
-            class="feature-tab relative flex w-full items-start overflow-hidden rounded-xl border border-transparent bg-cream px-10 py-6 text-left transition-all duration-300"
+            class="feature-tab relative flex w-full items-start overflow-hidden rounded-xl border border-transparent bg-whiteBase px-10 py-6 text-left transition-all duration-300"
             :class="selectedTool === index
-                ? 'border-cyan shadow-[0_0_0_1px_rgba(84,201,235,0.45),0_0_18px_rgba(84,201,235,0.22)]'
-                : 'text-navy hover:bg-blue-light hover:shadow-[0_0_0_1px_rgba(133,147,201,0.25)]'"
+                ? 'border-brightBlue shadow-[0_0_0_1px_rgba(84,201,235,0.45),0_0_18px_rgba(84,201,235,0.22)]'
+                : 'text-navy hover:bg-paleBlue hover:shadow-[0_0_0_1px_rgba(133,147,201,0.25)]'"
             :aria-pressed="selectedTool === index"
             @click="selectTool(index)"
             >
@@ -63,7 +63,7 @@
                     v-motion
                     :initial="{ opacity: 0, y: 24 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { duration: 700 } }"
-                    class="card-drift flex items-center justify-center rounded-xl bg-navy w-[90%] p-20 shadow-xl ring-1 ring-cyan"
+                    class="card-drift flex items-center justify-center rounded-xl bg-navy w-[90%] p-20 shadow-xl ring-1 ring-brightBlue"
                 >
                     <img
                     :src="activeTool.icon"
@@ -80,7 +80,7 @@
           <article
             v-for="tool in tools"
             :key="tool.title"
-            class="overflow-hidden rounded-xl border border-navy bg-cream"
+            class="overflow-hidden rounded-xl border border-navy bg-whiteBase"
           >
             <div class="grid grid-cols-1 md:grid-cols-[4fr_1fr]">
               <!-- Text block -->
@@ -164,7 +164,7 @@ function selectTool(index) {
 </script>
 
 <style scoped>
-/* Cyan border glow + float, same as HeroHome card-drift */
+/* brightBlue border glow + float, same as HeroHome card-drift */
 .card-drift {
   animation: border-glow 3s ease-in-out infinite;
 }

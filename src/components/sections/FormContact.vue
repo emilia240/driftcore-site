@@ -5,7 +5,7 @@
     <Transition name="toast">
       <div
         v-if="showSuccess"
-        class="fixed top-6 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-navy px-10 py-6 font-body text-base text-cream shadow-2xl"
+        class="fixed top-6 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-navy px-10 py-6 font-body text-base text-whiteBase shadow-2xl"
       >
         Message sent! We'll get back to you soon.
       </div>
@@ -23,7 +23,7 @@
         >
           <form
             @submit.prevent="handleSubmit"
-            class="flex h-full flex-col gap-6 rounded-xl bg-blue-light px-8 py-10"
+            class="flex h-full flex-col gap-6 rounded-xl bg-paleBlue px-8 py-10"
           >
             <!-- Name -->
             <div class="flex flex-col gap-2">
@@ -67,7 +67,7 @@
             <!-- Submit -->
             <button
               type="submit"
-              class="mt-2 rounded-xl bg-navy px-8 py-4 font-body text-base text-cream shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-muted"
+              class="mt-2 rounded-xl bg-navy px-8 py-4 font-body text-base text-whiteBase shadow-md transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
             >
               Send message
             </button>

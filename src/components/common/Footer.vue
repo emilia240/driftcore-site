@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-t border-navy/10 bg-cream z-20">
+  <footer class="border-t border-navy/10 bg-whiteBase z-20">
     <div class="mx-auto max-w-6xl px-6 py-12 lg:py-16">
 
       <!-- 3-column grid -->
@@ -86,9 +86,9 @@
       <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
         <p class="font-body text-xs text-navy/90">© 2026 DriftCore. All rights reserved.</p>
         <nav aria-label="Legal" class="flex gap-4">
-          <a href="/privacy" class="font-body text-xs text-blue-muted hover:underline">Privacy Policy</a>
-          <a href="/cookies" class="font-body text-xs text-blue-muted hover:underline">Cookies</a>
-          <a href="/terms"   class="font-body text-xs text-blue-muted hover:underline">Terms of Service</a>
+          <a href="/privacy" class="font-body text-xs text-slateBlue hover:underline">Privacy Policy</a>
+          <a href="/cookies" class="font-body text-xs text-slateBlue hover:underline">Cookies</a>
+          <a href="/terms"   class="font-body text-xs text-slateBlue hover:underline">Terms of Service</a>
         </nav>
       </div>
     </div>

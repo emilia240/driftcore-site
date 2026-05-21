@@ -4,8 +4,8 @@
     :class="[
       'sticky top-0 z-50 transition-all duration-300',
       scrolled 
-        ? 'bg-cream/95 shadow-md' 
-        : 'bg-cream shadow-sm'
+        ? 'bg-whiteBase/95 shadow-md' 
+        : 'bg-whiteBase shadow-sm'
     ]"
   >
         <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +41,7 @@
             <div class="hidden lg:block">
             <router-link
                 to="/login"
-                class="font-body text-navy px-6 py-2 text-base border-blue-muted border-2 rounded-xl hover:bg-blue-muted hover:text-cream transition-all duration-300"
+                class="font-body text-navy px-6 py-2 text-base border-slateBlue border-2 rounded-xl hover:bg-slateBlue hover:text-whiteBase transition-all duration-300"
             >
                 Log in
             </router-link>
@@ -98,7 +98,7 @@
         <div
         v-if="isMenuOpen"
         @click="closeMenu"
-        class="fixed inset-0 bg-blue-light/60 backdrop-blur-sm z-40 lg:hidden cursor-pointer"
+        class="fixed inset-0 bg-paleBlue/60 backdrop-blur-sm z-40 lg:hidden cursor-pointer"
         />
     </Transition>
 
@@ -113,14 +113,14 @@
     >
         <div
         v-if="isMenuOpen"
-        class="fixed top-0 right-0 h-full w-3/4 md:w-1/3 max-w-sm bg-cream shadow-2xl z-50 lg:hidden"
+        class="fixed top-0 right-0 h-full w-3/4 md:w-1/3 max-w-sm bg-whiteBase shadow-2xl z-50 lg:hidden"
         >
         <div class="flex flex-col h-full">
             <!-- Close button -->
             <div class="flex justify-end p-1">
             <button
                 @click="closeMenu"
-                class="p-2 rounded-md text-navy hover:bg-blue-light transition-colors"
+                class="p-2 rounded-md text-navy hover:bg-paleBlue transition-colors"
                 aria-label="Close menu"
             >
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +136,7 @@
                 :key="link.name"
                 :to="link.href"
                 @click="closeMenu"
-                class="w-full px-4 py-3 rounded-md text-base font-body text-navy hover:bg-blue-light transition-colors text-center"
+                class="w-full px-4 py-3 rounded-md text-base font-body text-navy hover:bg-paleBlue transition-colors text-center"
             >
                 {{ link.name }}
             </router-link>
@@ -144,7 +144,7 @@
             <router-link
                 to="/login"
                 @click="closeMenu"
-                class="w-full px-6 py-3 rounded-xl text-center text-base font-body text-cream bg-blue-muted"
+                class="w-full px-6 py-3 rounded-xl text-center text-base font-body text-whiteBase bg-slateBlue"
             >
                 Log in
             </router-link>

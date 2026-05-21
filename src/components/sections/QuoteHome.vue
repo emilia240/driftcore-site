@@ -32,7 +32,7 @@
             for the teams that just want to track time and get back to work. No screen
             tracking, no keystroke monitoring. Just honest time tracking.
           </p>
-          <p class="mt-8 font-body text-body text-blue-muted">
+          <p class="mt-8 font-body text-body text-slateBlue">
             — Rimon Bassem Hanna Issa, Founder of DriftCore
           </p>
         </div>

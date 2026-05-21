@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-gradient-to-b from-blue-light/25 to-cream py-16 sm:py-20">
+  <section class="w-full bg-gradient-to-b from-paleBlue/25 to-whiteBase py-16 sm:py-20">
     <div
       class="mx-auto grid w-full max-w-2xl px-4 sm:px-6
              lg:max-w-6xl lg:grid-cols-2 lg:items-start lg:gap-16 lg:px-8"
@@ -11,7 +11,7 @@
                  rounded-xl bg-navy px-6 shadow-lg"
         >       
             <!-- Tagline -->
-            <p class="font-heading text-h3 text-center leading-tight text-blue-light">
+            <p class="font-heading text-h3 text-center leading-tight text-paleBlue">
               Everything you need.<br />Nothing you don't.
             </p>
         
@@ -20,15 +20,15 @@
               <li
                 v-for="item in brandingFeatures"
                 :key="item"
-                class="flex items-center gap-3 font-body text-sm text-cyan"
+                class="flex items-center gap-3 font-body text-sm text-brightBlue"
               >
                 <img :src="CheckIcon" alt="" aria-hidden="true" class="h-4 w-auto shrink-0" />
                 {{ item }}
               </li>
             </ul>
 
-             <!-- Cyan logo -->
-            <img :src="CyanLogo" alt="DriftCore" class="w-44 h-auto" />
+             <!-- Bright Blue logo -->
+            <img :src="BrightBlueLogo" alt="DriftCore" class="w-44 h-auto" />
           </div>
       </aside>
 
@@ -37,21 +37,21 @@
 
         <!-- ── Success card ── -->
         <template v-if="submitted">
-          <div class="flex flex-col items-center gap-6 rounded-2xl border border-navy/10 bg-cream p-10 text-center shadow-md">
-            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-cyan/20">
-              <svg class="h-8 w-8 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <div class="flex flex-col items-center gap-6 rounded-2xl border border-navy/10 bg-whiteBase p-10 text-center shadow-md">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-brightBlue/20">
+              <svg class="h-8 w-8 text-brightBlue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0L12 13.5 2.25 6.75" />
               </svg>
             </div>
             <div class="flex flex-col gap-2">
               <h2 class="font-heading text-h3 text-navy">Check your email</h2>
-              <p class="font-body text-body text-blue-muted">
+              <p class="font-body text-body text-slateBlue">
                 We've sent a confirmation link to
                 <strong class="text-navy">{{ form.email }}</strong>.
                 Click it to activate your account.
               </p>
             </div>
-            <router-link to="/" class="font-body text-sm font-medium text-navy underline underline-offset-4 transition-colors hover:text-cyan">
+            <router-link to="/" class="font-body text-sm font-medium text-navy underline underline-offset-4 transition-colors hover:text-brightBlue">
               ← Back to home
             </router-link>
           </div>
@@ -61,10 +61,10 @@
         <template v-else>
           <div class="text-center">
             <h1 class="font-heading text-h2 text-navy">Start your free trial</h1>
-            <p class="mt-2 font-body text-body text-blue-muted">14 days free. No credit card required.</p>
+            <p class="mt-2 font-body text-body text-slateBlue">14 days free. No credit card required.</p>
           </div>
 
-          <div class="rounded-2xl border border-navy/10 bg-blue-light p-6 shadow-md sm:p-8">
+          <div class="rounded-2xl border border-navy/10 bg-paleBlue p-6 shadow-md sm:p-8">
             <form @submit.prevent="handleSignup" class="space-y-6" novalidate>
 
               <!-- Work email -->
@@ -76,10 +76,10 @@
                   type="email"
                   autocomplete="email"
                   placeholder="you@company.com"
-                  class="w-full rounded-xl border bg-cream px-4 py-3 font-body text-body
+                  class="w-full rounded-xl border bg-whiteBase px-4 py-3 font-body text-body
                          text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2
-                         focus:ring-cyan/20 transition-colors"
-                  :class="errors.email ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-cyan'"
+                         focus:ring-brightBlue/20 transition-colors"
+                  :class="errors.email ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-brightBlue'"
                 />
                 <p v-if="errors.email" role="alert" class="font-body text-sm text-red-500">{{ errors.email }}</p>
               </div>
@@ -96,10 +96,10 @@
                   autocomplete="new-password"
                   minlength="8"
                   placeholder="••••••••"
-                  class="w-full rounded-xl border bg-cream px-4 py-3 font-body text-body
+                  class="w-full rounded-xl border bg-whiteBase px-4 py-3 font-body text-body
                          text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2
-                         focus:ring-cyan/20 transition-colors"
-                  :class="errors.password ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-cyan'"
+                         focus:ring-brightBlue/20 transition-colors"
+                  :class="errors.password ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-brightBlue'"
                 />
                 <p v-if="errors.password" role="alert" class="font-body text-sm text-red-500">{{ errors.password }}</p>
               </div>
@@ -109,10 +109,10 @@
                 <ListboxLabel class="font-body text-sm font-medium text-navy">Team size</ListboxLabel>
                 <div class="relative">
                   <ListboxButton
-                    class="w-full rounded-xl border bg-cream px-4 py-3 text-left font-body
-                           text-body focus:outline-none focus:ring-2 focus:ring-cyan/20 transition-colors"
+                    class="w-full rounded-xl border bg-whiteBase px-4 py-3 text-left font-body
+                           text-body focus:outline-none focus:ring-2 focus:ring-brightBlue/20 transition-colors"
                     :class="[
-                      showTeamSizeError ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-cyan',
+                      showTeamSizeError ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-brightBlue',
                       isTeamSizePlaceholder ? 'text-navy/40' : 'text-navy',
                     ]"
                   >
@@ -136,7 +136,7 @@
                     leave-from-class="opacity-100 scale-100"
                     leave-to-class="opacity-0 scale-95"
                   >
-                    <ListboxOptions class="absolute z-10 mt-1 w-full overflow-hidden rounded-xl border border-navy/10 bg-cream py-1 shadow-lg focus:outline-none">
+                    <ListboxOptions class="absolute z-10 mt-1 w-full overflow-hidden rounded-xl border border-navy/10 bg-whiteBase py-1 shadow-lg focus:outline-none">
                       <ListboxOption
                         v-for="size in teamSizes"
                         :key="size.value"
@@ -147,12 +147,12 @@
                         <li
                           class="flex cursor-pointer items-center gap-2 px-4 py-3 font-body text-body text-navy transition-colors"
                           :class="[
-                            active ? 'bg-blue-light/40' : '',
+                            active ? 'bg-paleBlue/40' : '',
                             size.value === 'custom' ? 'border-t border-navy/10 italic' : '',
                           ]"
                         >
                           <span :class="selected ? 'font-medium' : ''">{{ size.label }}</span>
-                          <svg v-if="selected" class="ml-auto h-4 w-4 shrink-0 text-cyan" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                          <svg v-if="selected" class="ml-auto h-4 w-4 shrink-0 text-brightBlue" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                           </svg>
                         </li>
@@ -175,10 +175,10 @@
                       min="1"
                       max="99999"
                       placeholder="e.g. 75"
-                      class="w-full rounded-xl border bg-cream px-4 py-3 font-body text-body
+                      class="w-full rounded-xl border bg-whiteBase px-4 py-3 font-body text-body
                              text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2
-                             focus:ring-cyan/20 transition-colors"
-                      :class="errors.customTeamSize ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-cyan'"
+                             focus:ring-brightBlue/20 transition-colors"
+                      :class="errors.customTeamSize ? 'border-red-400 focus:border-red-400' : 'border-navy/20 focus:border-brightBlue'"
                     />
                     <p v-if="errors.customTeamSize" role="alert" class="font-body text-sm text-red-500">{{ errors.customTeamSize }}</p>
                   </div>
@@ -192,7 +192,7 @@
                   <span class="font-normal text-navy/50">
                     (<router-link
                       to="/pricing"
-                      class="text-blue-muted underline underline-offset-2 transition-colors hover:text-navy"
+                      class="text-slateBlue underline underline-offset-2 transition-colors hover:text-navy"
                     >See pricing features</router-link>)
                   </span>
                 </RadioGroupLabel>
@@ -206,21 +206,21 @@
                     v-slot="{ checked, active }"
                   >
                     <div
-                      class="bg-blue-muted flex cursor-pointer items-center justify-between rounded-xl border-2
+                      class="bg-slateBlue flex cursor-pointer items-center justify-between rounded-xl border-2
                              px-4 py-3.5 transition-all duration-200 focus:outline-none"
                       :class="[
-                        checked ? 'border-cyan bg-blue-light/40' : 'border-navy/10 hover:border-navy/30',
-                        active  ? 'ring-2 ring-cyan/30 ring-offset-1' : '',
+                        checked ? 'border-brightBlue bg-paleBlue/40' : 'border-navy/10 hover:border-navy/30',
+                        active  ? 'ring-2 ring-brightBlue/30 ring-offset-1' : '',
                       ]"
                     >
                       <div class="flex flex-col gap-0.5">
-                        <span class="font-heading text-h5 text-cream">{{ plan.name }}</span>
-                        <span class="font-body text-sm text-blue-light">{{ plan.price }}</span>
+                        <span class="font-heading text-h5 text-whiteBase">{{ plan.name }}</span>
+                        <span class="font-body text-sm text-paleBlue">{{ plan.price }}</span>
                       </div>
                       <!-- Check icon (same path as PricingCard.vue) -->
                       <svg
                         v-if="checked"
-                        class="h-5 w-5 shrink-0 text-cyan"
+                        class="h-5 w-5 shrink-0 text-brightBlue"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         aria-hidden="true"
@@ -241,16 +241,16 @@
               <Transition name="slide-down">
                 <div
                   v-if="priceCalc"
-                  class="rounded-xl border border-navy/10 bg-cream px-5 py-4"
+                  class="rounded-xl border border-navy/10 bg-whiteBase px-5 py-4"
                 >
                   <!-- Contact us state (enterprise plan or 250+ team) -->
                   <template v-if="priceCalc.type === 'contact'">
-                    <p class="font-body text-xs uppercase tracking-wide text-blue-muted">
+                    <p class="font-body text-xs uppercase tracking-wide text-slateBlue">
                       Enterprise & large teams
                     </p>
                     <router-link
                       to="/contact"
-                      class="mt-1 block font-heading text-h4 text-navy transition-colors hover:text-blue-muted"
+                      class="mt-1 block font-heading text-h4 text-navy transition-colors hover:text-slateBlue"
                     >
                       Contact us for a quote →
                     </router-link>
@@ -260,14 +260,14 @@
                   <template v-else>
                     <div class="flex items-end justify-between gap-4">
                       <div>
-                        <p class="font-body text-xs uppercase tracking-wide text-blue-muted">
+                        <p class="font-body text-xs uppercase tracking-wide text-slateBlue">
                           Estimated monthly total
                         </p>
                         <p class="mt-0.5 font-heading text-h3 text-navy">
                           {{ priceCalc.total }} kr.
                         </p>
                       </div>
-                      <p class="shrink-0 text-right font-body text-sm text-blue-muted">
+                      <p class="shrink-0 text-right font-body text-sm text-slateBlue">
                         {{ priceCalc.count }} users<br />
                         × {{ priceCalc.pricePerUser }} kr. / user
                       </p>
@@ -289,12 +289,12 @@
                     I agree to the
                     <a
                       href="/terms"
-                      class="text-blue-muted underline underline-offset-2 transition-colors hover:text-navy"
+                      class="text-slateBlue underline underline-offset-2 transition-colors hover:text-navy"
                     >Terms of Service</a>
                     and the
                     <a
                       href="/privacy"
-                      class="text-blue-muted underline underline-offset-2 transition-colors hover:text-navy"
+                      class="text-slateBlue underline underline-offset-2 transition-colors hover:text-navy"
                     >Privacy Policy</a>
                   </label>
                 </div>
@@ -306,15 +306,15 @@
               <!-- Submit -->
               <button
                 type="submit"
-                class="mt-2 w-full rounded-xl bg-navy px-10 py-4 font-body text-base text-cream
-                       shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-muted"
+                class="mt-2 w-full rounded-xl bg-navy px-10 py-4 font-body text-base text-whiteBase
+                       shadow-md transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
               >
                 Start my free trial
               </button>
             </form>
           </div>
 
-          <p class="text-center font-body text-sm text-blue-muted">
+          <p class="text-center font-body text-sm text-slateBlue">
             Already have an account?
             <router-link to="/login" class="font-medium text-navy transition-colors hover:underline">Log in</router-link>
           </p>
@@ -333,8 +333,8 @@ import {
   RadioGroup, RadioGroupLabel, RadioGroupOption,
 } from '@headlessui/vue'
 
-import CyanLogo  from '../assets/graphics/Logo-cyan.svg'
-import CheckIcon from '../assets/graphics/check-icon-cyan.svg'
+import BrightBlueLogo  from '../assets/graphics/Logo-brightBlue.svg'
+import CheckIcon from '../assets/graphics/check-icon-brightBlue.svg'
 
 const brandingFeatures = [
   'No steep learning curves',

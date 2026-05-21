@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-light text-navy">
+  <section class="bg-paleBlue text-navy">
     <div class="mx-auto max-w-7xl px-6 py-14 lg:py-20">
 
       <h2
@@ -18,7 +18,7 @@
           v-motion
           :initial="{ opacity: 0, y: 24 }"
           :visible-once="{ opacity: 1, y: 0, transition: { delay: index * 150, duration: 600 } }"
-          class="flex flex-1 items-start gap-6 rounded-xl bg-cream px-8 py-8"
+          class="flex flex-1 items-start gap-6 rounded-xl bg-whiteBase px-8 py-8"
         >
           <img :src="card.icon" :alt="card.title" class="h-16 w-16 shrink-0" />
           <div>

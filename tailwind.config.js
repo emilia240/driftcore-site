@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#F9F9F9',
+        whiteBase: '#F9F9F9',
         navy: '#213345',
-        'blue-light': '#DBE7FF',
-        'blue-muted': '#4A5D87',
-        'blue-soft': '#7F8CBF',
-        cyan: '#54C9EB',
+        paleBlue: '#DBE7FF',
+        softBlue: '#7F8CBF',
+        slateBlue: '#4A5D87',
+        brightBlue: '#54C9EB',
       },
       fontFamily: {
         heading: ['Inter Tight', 'sans-serif', 'medium'],

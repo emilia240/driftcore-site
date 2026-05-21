@@ -13,7 +13,7 @@
           <img :src="IconCustom" alt="Customisation" class="h-32 w-auto" />
           <router-link
             to="/contact"
-            class="rounded-xl bg-navy px-10 py-4 font-body text-base text-cream shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-blue-muted"
+            class="rounded-xl bg-navy px-10 py-4 font-body text-base text-whiteBase shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-slateBlue"
           >
             Contact developers
           </router-link>

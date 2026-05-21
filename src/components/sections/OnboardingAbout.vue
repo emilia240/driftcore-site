@@ -28,7 +28,7 @@
           v-motion
           :initial="{ opacity: 0, y: 24 }"
           :visible-once="{ opacity: 1, y: 0, transition: { delay: index * 150, duration: 600 } }"
-          class="flex flex-1 items-start gap-6 rounded-xl bg-cream border border-cyan/90 px-10 py-10"
+          class="flex flex-1 items-start gap-6 rounded-xl bg-whiteBase border border-brightBlue/90 px-10 py-10"
         >
           <img :src="step.icon" :alt="step.title" class="h-16 w-auto shrink-0" />
           <div>

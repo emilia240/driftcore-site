@@ -4,12 +4,12 @@
       <!-- Centered content with flex -->
       <div class="flex flex-col items-center space-y-8">
         <!-- Heading -->
-        <h2 class="text-h2 font-heading text-cream text-center">
+        <h2 class="text-h2 font-heading text-whiteBase text-center">
           Ready to track time without the headache?
         </h2>
         
         <!-- Subtitle -->
-        <p class="text-body text-cream opacity-90 text-center">
+        <p class="text-body text-whiteBase opacity-90 text-center">
           Free for 14 days. No credit card required.
         </p>
         
@@ -18,7 +18,7 @@
           <li 
             v-for="item in features" 
             :key="item"
-            class="flex items-center gap-3 text-cyan text-body"
+            class="flex items-center gap-3 text-brightBlue text-body"
           >
             <!-- Check icon -->
             <img 
@@ -36,7 +36,7 @@
         <div class="pt-4">
           <router-link
             to="/signup"
-            class="flex bg-cyan text-navy font-body font-semibold px-8 py-4 rounded-xl hover:bg-cream hover:text-navy transition-all duration-200"
+            class="flex bg-brightBlue text-navy font-body font-semibold px-8 py-4 rounded-xl hover:bg-whiteBase hover:text-navy transition-all duration-200"
           >
             Get started for free
           </router-link>
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-import CheckIcon from '../../assets/graphics/check-icon-cyan.svg'
+import CheckIcon from '../../assets/graphics/check-icon-brightBlue.svg'
 
 const features = [
   'No steep learning curves',

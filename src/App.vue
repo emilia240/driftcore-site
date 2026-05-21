@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="relative flex min-h-screen flex-col overflow-hidden bg-cream">
+  <div id="app" class="relative flex min-h-screen flex-col overflow-hidden bg-whiteBase">
     <!-- Global ambient background -->
-    <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-light/30 via-cream to-blue-soft/20" aria-hidden="true" />
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-paleBlue/30 via-whiteBase to-softBlue/20" aria-hidden="true" />
     <div class="ambient-orb ambient-orb-one" aria-hidden="true" />
     <div class="ambient-orb ambient-orb-two" aria-hidden="true" />
     

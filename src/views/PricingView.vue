@@ -26,7 +26,7 @@
     />
   </div>
 
-  <p class="mx-6 my-6 rounded-xl bg-cyan/60 px-6 py-4 text-center font-body text-body text-navy lg:mx-auto lg:my-12 lg:max-w-4xl">
+  <p class="mx-6 my-6 rounded-xl bg-brightBlue/60 px-6 py-4 text-center font-body text-body text-navy lg:mx-auto lg:my-12 lg:max-w-4xl">
   Onboarding available as a paid add-on for Basic. Included in Pro & Enterprise.
   </p>
 </template>

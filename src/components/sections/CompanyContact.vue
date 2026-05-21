@@ -1,6 +1,6 @@
 <template>
   <section class="px-6 py-14 lg:py-20">
-    <div class="mx-auto max-w-7xl rounded-xl bg-blue-light px-8 py-14 lg:py-20">
+    <div class="mx-auto max-w-7xl rounded-xl bg-paleBlue px-8 py-14 lg:py-20">
       <div class="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-16">
 
         <!-- Left: heading + paragraph -->
