@@ -29,7 +29,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75" />
             </svg>
             <!-- TODO: replace with the real support email before launch -->
-            <a href="mailto:hello@driftcore.dk" class="font-body text-h4 text-navy underline-offset-4 transition-colors hover:text-blue-muted hover:underline">hello@driftcore.dk</a>
+            <a href="mailto:hello@driftcore.dk" class="font-body text-h4 text-navy underline-offset-4 transition-colors hover:text-slateBlue hover:underline">hello@driftcore.dk</a>
           </div>
 
           <div class="flex items-center gap-4 justify-center lg:justify-start">
@@ -41,7 +41,7 @@
               href="https://maps.google.com/?q=Esbjerg,+Denmark"
               target="_blank"
               rel="noopener noreferrer"
-              class="font-body text-h4 text-navy underline-offset-4 transition-colors hover:text-blue-muted hover:underline"
+              class="font-body text-h4 text-navy underline-offset-4 transition-colors hover:text-slateBlue hover:underline"
             >Mådevej 53, 1 6700 Esbjerg, Danmark</a>
           </div>
         </div>
