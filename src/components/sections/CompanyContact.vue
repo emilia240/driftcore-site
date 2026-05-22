@@ -28,7 +28,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 shrink-0 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75" />
             </svg>
-            <span class="font-body text-h4 text-navy">hello@driftcore.dk</span>
+            <!-- TODO: replace with the real support email before launch -->
+            <a href="mailto:hello@driftcore.dk" class="font-body text-h4 text-navy underline-offset-4 transition-colors hover:text-blue-muted hover:underline">hello@driftcore.dk</a>
           </div>
 
           <div class="flex items-center gap-4 justify-center lg:justify-start">
@@ -36,7 +37,12 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
             </svg>
-            <span class="font-body text-h4 text-navy">Esbjerg, Denmark</span>
+            <a
+              href="https://maps.google.com/?q=Esbjerg,+Denmark"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-body text-h4 text-navy underline-offset-4 transition-colors hover:text-blue-muted hover:underline"
+            >Mådevej 53, 1 6700 Esbjerg, Danmark</a>
           </div>
         </div>
 
