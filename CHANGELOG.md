@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.0](https://github.com/emilia240/driftcore-site/compare/v1.0.0...v1.1.0) (2026-05-22)
+
+
+### Features
+
+* Add 404 not-found view for legal links and unknown routes ([453c9bb](https://github.com/emilia240/driftcore-site/commit/453c9bb7a6a35b8cfd46e83cd0291bec4901f2d3))
+* Condition Home link on mobile + static transparent style ([a3af22e](https://github.com/emilia240/driftcore-site/commit/a3af22eca34999cbe65065a0873e284728a0630f))
+* Speed up entrance animations and add desktop hover scale to stat cards ([e6cc6d1](https://github.com/emilia240/driftcore-site/commit/e6cc6d166d88baadbdfe2cd49ff2af3328edbf24))
+
+
+### Bug Fixes
+
+* Implement consistent font weight and smooth hover transitions on buttons ([5a55bb0](https://github.com/emilia240/driftcore-site/commit/5a55bb0b0a88a593dfcbe551d4bd610c0aa94a4c))
+* Inherit global layout gradient bg ([38624cf](https://github.com/emilia240/driftcore-site/commit/38624cf204218f1df7fec3fd102e6b58dd0bb6cd))
+* Make email and address links interactive ([b22dfb5](https://github.com/emilia240/driftcore-site/commit/b22dfb5d2a47a1b28ec3eab016e21d630f6fbcda))
+* **navbar:** resolve mobile menu scroll lock ([51286de](https://github.com/emilia240/driftcore-site/commit/51286de60a78b99dd1531a505f4032abab7624e4))
+* Replace overflow-hidden with overflow-x-clip to fix sticky positioning ([c9a13e7](https://github.com/emilia240/driftcore-site/commit/c9a13e7db16d8e08101488bf36b789c752316966))
+* Restructure footer layout and design; hover on links ([112676e](https://github.com/emilia240/driftcore-site/commit/112676e643211e1b13bf549a48cf1308f5e534e0))
+* Scroll to top on every navigation ([9229883](https://github.com/emilia240/driftcore-site/commit/92298836c7d26c1f669cb9e4af8ece8f11ddd010))
+
 ## 1.0.0 (2026-05-18)
 
 
