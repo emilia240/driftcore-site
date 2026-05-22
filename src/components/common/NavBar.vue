@@ -1,12 +1,8 @@
 <template>
+  <div class="sticky top-0 z-50">
   <Disclosure 
     as="nav" 
-    :class="[
-      'sticky top-0 z-50 transition-all duration-300',
-      scrolled 
-        ? 'bg-whiteBase/95 shadow-md' 
-        : 'bg-whiteBase shadow-sm'
-    ]"
+    class="backdrop-blur-md bg-whiteBase/80 shadow-[0_1px_8px_rgba(33,51,69,0.07)]"
   >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
@@ -25,7 +21,7 @@
             <div class="hidden lg:flex flex-1 justify-center">
             <div class="flex space-x-8">
                 <router-link
-                v-for="link in navigation"
+                v-for="link in navigation.filter(l => l.href !== '/')"
                 :key="link.name"
                 :to="link.href"
                 class="font-body text-navy px-3 py-2 text-base relative group"
@@ -83,6 +79,7 @@
         </div>
         </div>
   </Disclosure>
+  </div>
 
   <!-- OUTSIDE Disclosure, after the closing </Disclosure> tag -->
     <Teleport to="body">
@@ -131,15 +128,16 @@
 
             <!-- Nav links -->
             <div class="px-6 pt-6 pb-3 flex flex-col items-center space-y-2">
+            <template v-for="link in navigation" :key="link.name">
             <router-link
-                v-for="link in navigation"
-                :key="link.name"
+                v-if="link.href !== '/' || route.path !== '/'"
                 :to="link.href"
                 @click="closeMenu"
                 class="w-full px-4 py-3 rounded-md text-base font-body text-navy hover:bg-paleBlue transition-colors text-center"
             >
                 {{ link.name }}
             </router-link>
+            </template>
 
             <router-link
                 to="/login"
@@ -163,6 +161,9 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 
 const isMenuOpen = ref(false)
 
@@ -186,18 +187,8 @@ const navigation = [
   { name: 'Contact', href: '/contact' },
 ]
 
-// Scroll state for transparency effect
-const scrolled = ref(false)
 
-const handleScroll = () => {
-  scrolled.value = window.scrollY > 10
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
 </script>
+
+<style scoped>
+</style>
