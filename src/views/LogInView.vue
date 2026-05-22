@@ -2,10 +2,10 @@
   <section class="w-full bg-gradient-to-b from-paleBlue/25 to-whiteBase py-16 sm:py-20">
     <div
       class="mx-auto grid w-full max-w-md px-4 sm:px-6
-             lg:max-w-6xl lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8"
+             lg:max-w-6xl lg:grid-cols-2 lg:items-start lg:gap-16 lg:px-8"
     >
       <!-- ── Left: Branding panel ── -->
-      <aside class="hidden lg:block"> 
+      <aside class="hidden lg:block lg:sticky lg:top-24"> 
         <div
           class="flex aspect-[4/5] flex-col items-center justify-center gap-8
                  rounded-xl bg-navy px-6 shadow-lg"
