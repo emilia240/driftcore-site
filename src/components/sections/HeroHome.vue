@@ -73,34 +73,34 @@
           :enter="{ opacity: 1, x: 0, transition: { delay: 1450, duration: 700 } }"
           class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 lg:gap-10"
           >
-<div class="lg:transition-transform lg:duration-300 lg:hover:scale-105">
-                <article class="card-drift -rotate-1 flex min-h-[3.5rem] flex-col items-center justify-center gap-1 rounded-lg bg-navy px-6 py-4 text-whiteBase shadow-xl ring-1 ring-brightBlue sm:min-h-[5rem] sm:gap-2 sm:p-3 lg:min-h-[10rem] lg:gap-3 lg:rounded-xl lg:p-4">
-                    <img :src="HeroHours" alt="" aria-hidden="true" class="h-6 w-6 shrink-0 sm:h-10 sm:w-10 lg:h-16 lg:w-16" />
-                    <div class="hidden flex-col items-center gap-1 text-center sm:flex">
-                        <p class="font-heading text-h5 leading-tight">6h tracked</p>
-                        <p class="text-xs leading-tight">Synced &amp; ready</p>
-                    </div>
-                </article>
+                <div class="lg:transition-transform lg:duration-300 lg:hover:scale-105">
+                  <article class="card-drift -rotate-1 flex min-h-[3.5rem] flex-col items-center justify-center gap-1 rounded-lg bg-navy px-6 py-4 text-whiteBase shadow-xl ring-1 ring-brightBlue sm:min-h-[5rem] sm:gap-2 sm:p-3 lg:min-h-[10rem] lg:gap-3 lg:rounded-xl lg:p-4">
+                      <img :src="HeroHours" alt="" aria-hidden="true" class="h-6 w-6 shrink-0 sm:h-10 sm:w-10 lg:h-16 lg:w-16" />
+                      <div class="hidden flex-col items-center gap-1 text-center sm:flex">
+                          <p class="font-heading text-h5 leading-tight">6h tracked</p>
+                          <p class="text-xs leading-tight">Synced &amp; ready</p>
+                      </div>
+                  </article>
                 </div>
                 
                 <div class="lg:transition-transform lg:duration-300 lg:hover:scale-105">
-                <article class="card-drift rotate-2 flex min-h-[3.5rem] flex-col items-center justify-center gap-1 rounded-lg bg-navy px-6 py-4 text-whiteBase shadow-xl ring-1 ring-brightBlue sm:min-h-[5rem] sm:gap-2 sm:p-3 lg:min-h-[10rem] lg:gap-3 lg:rounded-xl lg:p-4">
-                    <img :src="HeroApprovals" alt="" aria-hidden="true" class="h-6 w-6 shrink-0 sm:h-10 sm:w-10 lg:h-16 lg:w-16" />
-                    <div class="hidden flex-col items-center gap-1 text-center sm:flex">
-                        <p class="font-heading text-h5 leading-tight">Week approved</p>
-                        <p class="text-xs leading-tight">March 11-17</p>
-                    </div>
-                </article>
+                  <article class="card-drift rotate-2 flex min-h-[3.5rem] flex-col items-center justify-center gap-1 rounded-lg bg-navy px-6 py-4 text-whiteBase shadow-xl ring-1 ring-brightBlue sm:min-h-[5rem] sm:gap-2 sm:p-3 lg:min-h-[10rem] lg:gap-3 lg:rounded-xl lg:p-4">
+                      <img :src="HeroApprovals" alt="" aria-hidden="true" class="h-6 w-6 shrink-0 sm:h-10 sm:w-10 lg:h-16 lg:w-16" />
+                      <div class="hidden flex-col items-center gap-1 text-center sm:flex">
+                          <p class="font-heading text-h5 leading-tight">Week approved</p>
+                          <p class="text-xs leading-tight">March 11-17</p>
+                      </div>
+                  </article>
                 </div>
                 
                 <div class="lg:transition-transform lg:duration-300 lg:hover:scale-105">
-                <article class="card-drift -rotate-2 flex min-h-[3.5rem] flex-col items-center justify-center gap-1 rounded-lg bg-navy px-6 py-4 text-whiteBase shadow-xl ring-1 ring-brightBlue sm:min-h-[5rem] sm:gap-2 sm:p-3 lg:min-h-[10rem] lg:gap-3 lg:rounded-xl lg:p-4">
-                    <img :src="HeroProject" alt="" aria-hidden="true" class="h-6 w-6 shrink-0 sm:h-10 sm:w-10 lg:h-16 lg:w-16" />
-                    <div class="hidden flex-col items-center gap-1 text-center sm:flex">
-                        <p class="font-heading text-h5 leading-tight">4 projects</p>
-                        <p class="text-xs leading-tight">38h tracked</p>
-                    </div>
-                </article>
+                  <article class="card-drift -rotate-2 flex min-h-[3.5rem] flex-col items-center justify-center gap-1 rounded-lg bg-navy px-6 py-4 text-whiteBase shadow-xl ring-1 ring-brightBlue sm:min-h-[5rem] sm:gap-2 sm:p-3 lg:min-h-[10rem] lg:gap-3 lg:rounded-xl lg:p-4">
+                      <img :src="HeroProject" alt="" aria-hidden="true" class="h-6 w-6 shrink-0 sm:h-10 sm:w-10 lg:h-16 lg:w-16" />
+                      <div class="hidden flex-col items-center gap-1 text-center sm:flex">
+                          <p class="font-heading text-h5 leading-tight">4 projects</p>
+                          <p class="text-xs leading-tight">38h tracked</p>
+                      </div>
+                  </article>
                 </div>
             </div>
         </div>
