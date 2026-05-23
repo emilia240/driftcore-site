@@ -35,7 +35,7 @@
         leave-from-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
       >
-        <ListboxOptions class="absolute z-10 mt-1 w-full overflow-hidden rounded-xl border border-navy/10 bg-whiteBase py-1 shadow-lg focus:outline-none">
+        <ListboxOptions class="absolute z-10 mt-1 w-full max-h-60 overflow-y-auto rounded-xl border border-navy/10 bg-whiteBase py-1 shadow-lg focus:outline-none">
           <ListboxOption
             v-for="size in teamSizes"
             :key="size.value"

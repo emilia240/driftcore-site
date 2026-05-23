@@ -6,7 +6,7 @@
     <div class="ambient-orb ambient-orb-two" aria-hidden="true" />
     
     <NavBar />
-     <main class="relative z-10 flex-grow">
+     <main class="relative z-20 flex-grow">
       <router-view />
     </main>
     <Footer />

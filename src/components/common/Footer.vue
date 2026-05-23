@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-t border-navy/10 bg-whiteBase z-20">
+  <footer class="relative z-10 border-t border-navy/10 bg-whiteBase">
     <div class="mx-auto max-w-6xl px-6 py-12 lg:py-16">
 
       <!-- 3-column grid -->

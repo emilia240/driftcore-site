@@ -29,9 +29,12 @@
   <p class="mx-6 my-6 rounded-xl bg-brightBlue/60 px-6 py-4 text-center font-body text-body text-navy lg:mx-auto lg:my-12 lg:max-w-4xl">
   Onboarding available as a paid add-on for Basic. Included in Pro & Enterprise.
   </p>
+
+  <CalculatorPricing />
 </template>
 
 <script setup>
-import HeroSection from '../components/common/HeroSection.vue'
-import PricingCard from '../components/common/PricingCard.vue'
+import HeroSection        from '../components/common/HeroSection.vue'
+import PricingCard        from '../components/common/PricingCard.vue'
+import CalculatorPricing  from '../components/sections/CalculatorPricing.vue'
 </script>
