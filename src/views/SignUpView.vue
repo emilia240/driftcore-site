@@ -62,7 +62,7 @@
               <!-- Password -->
               <div class="flex flex-col gap-1.5">
                 <label for="signup-password" class="font-body text-sm font-medium text-navy">
-                  Password <span class="font-normal text-navy/40">(min. 8 characters)</span>
+                  Password <span class="font-normal text-navy/80">(min. 8 characters)</span>
                 </label>
                 <input
                   id="signup-password"

@@ -45,7 +45,7 @@
                 Get started
             </router-link>
 
-            <p class="font-body text-sm text-navy/60">
+            <p class="font-body text-sm text-navy/80">
                 14-day free trial · No credit card required
             </p>
             </div>
@@ -75,7 +75,7 @@
 </template>
 
 <script setup>
-import Logo      from '/logo-driftcore.svg'
+import Logo from '/logo-driftcore.svg'
 import HeroCards from './HeroCards.vue'
 </script>
 

@@ -2,7 +2,6 @@
   <HeroSection
     title="Simple Pricing"
     subtitle="Pick a plan, try it free for 14 days. Cancel any time."
-    tag="h2"
   />
 
   <div class="mx-auto px-6 py-8 lg:py-10 flex flex-col items-center gap-6 lg:flex-row lg:justify-center lg:items-stretch">
