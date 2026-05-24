@@ -50,3 +50,12 @@
 
   </section>
 </template>
+
+<script setup>
+import { useMeta } from '../composables/useMeta.js'
+
+useMeta({
+  title: 'Page Not Found – DriftCore',
+  description: 'Sorry, the page you\'re looking for doesn\'t exist. Head back to DriftCore.',
+})
+</script>

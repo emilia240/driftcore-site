@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DriftCore – The time tracking tool designed for focus and simplicity. No bloat, just performance." />
     <title>DriftCore – Time Tracking Made Simple</title>
+
+    <!--
+      JSON-LD Structured Data (Schema.org)
+      =====================================
+      This tells Google *what* DriftCore is so it can show rich results
+      (e.g. product info, price range) in search.
+      TODO (before go-live): Replace the "url" value with the production domain.
+      Docs: https://schema.org/SoftwareApplication
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "DriftCore",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "The smooth, low-friction time tracker for teams who want to get back to work. Essential features, no bloat.",
+      "url": "https://YOUR-FINAL-DOMAIN.com",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "DKK",
+        "lowPrice": "39",
+        "highPrice": "79",
+        "offerCount": "2",
+        "description": "39–79 kr. per user/month. Enterprise pricing on request."
+      },
+      "featureList": [
+        "Time tracking",
+        "Team approvals",
+        "Project reporting",
+        "Invoicing",
+        "Custom development (Enterprise)"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="app"></div>

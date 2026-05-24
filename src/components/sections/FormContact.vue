@@ -84,6 +84,8 @@
           <img
             :src="TeamPhoto"
             alt="DriftCore development team"
+            width="1200" height="800"
+            loading="lazy"
             class="h-full w-full rounded-xl object-cover object-top"
           />
         </div>

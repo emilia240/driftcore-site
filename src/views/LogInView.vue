@@ -100,8 +100,14 @@
 </template>
 
 <script setup>
+import { useMeta } from '../composables/useMeta.js'
 import { ref } from 'vue'
 import AuthBrandingPanel from '../components/common/AuthBrandingPanel.vue'
+
+useMeta({
+  title: 'Log In – DriftCore',
+  description: 'Log in to your DriftCore account and get back to tracking time.',
+})
 import ForgotPasswordDialog from '../components/common/ForgotPasswordDialog.vue'
 import AuthLoadingOverlay from '../components/common/AuthLoadingOverlay.vue'
 import { useLoginForm } from '../composables/useLoginForm.js'

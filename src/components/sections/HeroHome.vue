@@ -62,6 +62,7 @@
               :enter="{ opacity: 1, scale: 1, transition: { delay: 0, duration: 900 } }"
               :src="Logo" 
               alt="DriftCore" 
+              fetchpriority="high"
               class="h-20 w-auto sm:h-28 lg:h-36" 
               />
           </div>

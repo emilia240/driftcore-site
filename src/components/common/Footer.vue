@@ -72,7 +72,7 @@
               </div>
             </div>
             <!-- Logo, stretches to full height of the left column -->
-            <img :src="SharkwareLogo" alt="Sharkware logo" class="h-24 w-auto object-contain" />
+            <img :src="SharkwareLogo" alt="Sharkware logo"  class="h-[80px] w-[110px] object-contain" />
           </div>
 
         </div>

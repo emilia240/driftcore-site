@@ -143,7 +143,14 @@
 </template>
 
 <script setup>
+import { useMeta } from '../composables/useMeta.js'
 import AuthBrandingPanel  from '../components/common/AuthBrandingPanel.vue'
+
+useMeta({
+  title: 'Start Your Free Trial – DriftCore',
+  description: 'Sign up for DriftCore and start your 14-day free trial. No credit card required. Simple setup, powerful time tracking for your team.',
+  keywords: 'time tracker free trial, sign up DriftCore, no credit card time tracker',
+})
 import TeamSizeSelect    from '../components/common/TeamSizeSelect.vue'
 import PlanPicker        from '../components/common/PlanPicker.vue'
 import PriceCalculator   from '../components/common/PriceCalculator.vue'

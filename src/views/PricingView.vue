@@ -33,7 +33,14 @@
 </template>
 
 <script setup>
+import { useMeta } from '../composables/useMeta.js'
 import HeroSection        from '../components/common/HeroSection.vue'
+
+useMeta({
+  title: 'Pricing – Affordable Plans for Every Team Size',
+  description: 'DriftCore starts at 39 kr. per user/month. Simple, transparent pricing with a 14-day free trial. No credit card required.',
+  keywords: 'affordable time tracker, time tracking pricing, team time tracking plans, simple time tracker cost',
+})
 import PricingCard        from '../components/common/PricingCard.vue'
 import CalculatorPricing  from '../components/sections/CalculatorPricing.vue'
 </script>

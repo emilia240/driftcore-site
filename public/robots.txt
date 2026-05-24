@@ -1,0 +1,21 @@
+# robots.txt for DriftCore
+#
+# TODO (before go-live): Replace the temporary Firebase domain below with the
+# production domain in the Sitemap URL.
+# Current temp domain: https://YOUR-PROJECT.web.app
+# Production domain:   https://YOUR-FINAL-DOMAIN.com
+#
+# Docs: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+User-agent: *
+Allow: /
+
+# Keep auth and legal pages out of the index
+Disallow: /login
+Disallow: /signup
+Disallow: /privacy
+Disallow: /cookies
+Disallow: /terms
+
+# TODO: update domain before go-live
+Sitemap: https://YOUR-PROJECT.web.app/sitemap.xml
