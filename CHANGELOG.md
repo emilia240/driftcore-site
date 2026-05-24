@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/emilia240/driftcore-site/compare/v1.2.0...v1.2.1) (2026-05-24)
+
+
+### Bug Fixes
+
+* Footer mobile layout & Google Fonts render-blocking ([e8380b7](https://github.com/emilia240/driftcore-site/commit/e8380b7867d12fd28f579117ce97bb812c723367))
+
 ## [1.2.0](https://github.com/emilia240/driftcore-site/compare/v1.1.0...v1.2.0) (2026-05-24)
 
 
