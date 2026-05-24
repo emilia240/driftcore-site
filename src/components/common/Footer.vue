@@ -3,18 +3,18 @@
     <div class="mx-auto max-w-6xl px-6 py-12 lg:py-16">
 
       <!-- 3-column grid -->
-      <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+      <div class="flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-between">
 
         <!-- Col 1: Left DriftCore brand -->
-        <div class="flex flex-col gap-4 md:max-w-xs">
+        <div class="flex flex-col items-center gap-4 md:items-start md:max-w-xs">
           <p class="font-heading text-h3 text-navy">DriftCore</p>
-          <p class="font-body text-sm text-navy/90 max-w-xs">
+          <p class="font-body text-sm text-navy/90 px-4 md:px-0">
             The time tracking tool designed for focus and simplicity. No bloat, just performance.
           </p>
         </div>
 
         <!-- Right: All links -->
-        <div class="flex flex-wrap gap-10 md:gap-12">
+        <div class="flex flex-col gap-10 md:flex-row md:flex-wrap md:items-start md:gap-12">
           <!-- Explore links -->
           <nav aria-label="Explore" class="flex flex-col gap-3">
             <h2 class="font-heading text-h5 text-navy">Explore</h2>
@@ -40,7 +40,7 @@
           </nav>
 
           <!-- Built by Sharkware -->
-          <div class="flex items-stretch gap-6">
+          <div class="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-6">
             <!-- Left column: heading + links -->
             <div class="flex flex-col gap-4">
               <h2 class="font-heading text-h5 text-navy">Built by</h2>
@@ -72,7 +72,7 @@
               </div>
             </div>
             <!-- Logo, stretches to full height of the left column -->
-            <img :src="SharkwareLogo" alt="Sharkware logo"  class="h-[80px] w-[110px] object-contain" />
+            <img :src="SharkwareLogo" alt="Sharkware logo" class="h-[80px] w-[110px] object-contain self-start md:self-auto" />
           </div>
 
         </div>
@@ -83,7 +83,7 @@
 
     <!-- Legal bottom bar -->
     <div class="border-t border-navy/10 px-6 py-5">
-      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
+      <div class="mx-auto flex max-w-6xl flex-col items-center gap-3 md:flex-row md:items-center md:justify-between">
         <p class="font-body text-xs text-navy/90">© 2026 DriftCore. All rights reserved.</p>
         <nav aria-label="Legal" class="flex gap-4">
           <a href="/privacy" class="font-body text-xs text-slateBlue hover:underline">Privacy Policy</a>

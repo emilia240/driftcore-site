@@ -18,7 +18,7 @@
           :visible-once="{ opacity: 1, y: 0, transition: { delay: 150, duration: 600 } }"
           class="mt-4 font-body text-body text-navy"
         >
-          Web-based and fully responsive — open it from your desk, your phone, or anywhere in between.
+          Web-based and fully responsive - open it from your desk, your phone, or anywhere in between.
         </p>
       </div>
 

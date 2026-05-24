@@ -8,7 +8,7 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
         class="mx-auto max-w-3xl text-center font-heading text-h2 leading-tight text-navy"
       >
-        Time tracking should help your team — not spy on it.
+        Time tracking should help your team - not spy on it.
       </h2>
 
       <div class="mt-12 flex flex-col gap-6 lg:flex-row">
