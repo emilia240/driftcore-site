@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/emilia240/driftcore-site/compare/v1.1.0...v1.2.0) (2026-05-24)
+
+
+### Features
+
+* Add CalculatorPricing section on Pricing page ([79e5415](https://github.com/emilia240/driftcore-site/commit/79e54155d58055d1e970ab94587df10ed546a240))
+* **seo:** add meta tags, sitemap, robots.txt, JSON-LD, and LCP hint ([2204787](https://github.com/emilia240/driftcore-site/commit/22047873a6d4e3b638ae6ba4463fab9c727d1feb))
+
+
+### Bug Fixes
+
+* Resolve accessibility issues across site ([7e3166d](https://github.com/emilia240/driftcore-site/commit/7e3166d85f4c20224f2d159b8fec35209c8e4ed5))
+
 ## [1.1.0](https://github.com/emilia240/driftcore-site/compare/v1.0.0...v1.1.0) (2026-05-22)
 
 
